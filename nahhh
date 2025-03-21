@@ -1,0 +1,71 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<windows.h>
+
+void clear(){
+
+    system("cls");
+
+}
+
+
+int main(){
+
+    clear();
+
+    char *lirik[] = {"trust ", "me ", "i've ","been ", "broken ", "before\n",
+                     "i've ", "been ", "broken ", "yeah\n", 
+                     "i ", "know ", "how ", "it ", "feels\n",
+                     "to ", "be ", "open\n",
+                     "and ", "then ", "find ", "out ", "your ", "love \3", " isn't ", "real\n",
+                     "i'm ", "still ", "hurting ", "yeah\n",
+                     "i'm ", "hurting ", "inside\n",
+                     "i'm ", "so ", "scare ", "to ", "fall ", "in ", "love\n",
+                     "but ", "if ", "it's ", "you ", "then ", "i'll ", "try"};   
+                                  
+    for(int i = 0; i<48; i++){
+
+        if(i==5 || i==14 ){
+
+            Sleep(400);
+            printf("%s", lirik[i]);
+            Sleep(900);
+        } 
+        else if (i==9){
+
+            Sleep(800);
+            printf("%s", lirik[i]);
+            Sleep(900);
+        } 
+        else if(i==17 || i==25){
+            Sleep(400);
+            printf("%s", lirik[i]);
+            Sleep(500);
+        }
+        else if(i==29){
+            Sleep(900);
+            printf("%s", lirik[i]);
+            Sleep(900);
+        }
+        else if(i==32){
+            Sleep(500);
+            printf("%s", lirik[i]);
+            Sleep(700);
+        }
+        else if(i==33){
+            Sleep(400);
+            printf("%s", lirik[i]);
+            Sleep(600);
+
+        }
+        else{
+
+        Sleep(300);
+        printf("%s", lirik[i]);
+
+        }
+    }                  
+
+
+    return 0;
+}
